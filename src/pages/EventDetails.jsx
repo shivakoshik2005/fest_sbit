@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, Users, Trophy } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContestCard from '../components/ContestCard';
 import GlassCard from '../components/GlassCard';
+import { events } from '../data/content';
 
 // Mouse follower component
 const MouseFollower = ({ children, className = '', speed = 1 }) => {
@@ -49,11 +50,23 @@ const MouseFollower = ({ children, className = '', speed = 1 }) => {
   );
 };
 
-const EventDetails = ({ event }) => {
+const EventDetails = ({ event: propEvent }) => {
+  const { id } = useParams();
+  const event = propEvent || events.find(e => e.id === parseInt(id));
+
   if (!event) {
     return (
       <div className="min-h-screen bg-pattern flex items-center justify-center">
-        <p className="text-slate-500">Event not found</p>
+        <div className="text-center">
+          <p className="text-slate-500 text-lg mb-4">Event not found</p>
+          <Link 
+            to="/events" 
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-medium hover:shadow-lg transition-all"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Events
+          </Link>
+        </div>
       </div>
     );
   }

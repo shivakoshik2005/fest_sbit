@@ -87,8 +87,7 @@ const Footer = () => {
                   {contactInfo.phone}
                 </a>
                 <span className="flex items-center gap-2 text-slate-600 text-sm">
-                  <MapPin className="w-4 h-4" />
-                  {contactInfo.address}
+                {contactInfo.address}
                 </span>
               </div>
             </GlassCard>
@@ -96,9 +95,8 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="mt-12 pt-8 border-t border-slate-200/50">
-            <p className="text-center text-slate-500 text-sm">
-              © {collegeInfo.year} {collegeInfo.festName}. All rights reserved. | 
-              Designed with ❤️ by SBIT
+          <p className="text-center text-slate-500 text-sm">
+            Designed with ❤️ by SPARK INNOVATION CENTRE, SBIT.
             </p>
           </div>
         </div>

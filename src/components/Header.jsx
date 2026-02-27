@@ -38,11 +38,10 @@ const Header = () => {
           {/* Left: Logos and College Name */}
           <div className="flex items-center gap-3">
             {/* SBIT Logo */}
-            <Link to="/" className="group flex-shrink-0">
-              <img 
-                src="https://images.unsplash.com/photo-1562774053-701939374585?w=100&q=80" 
-                alt="SBIT Logo" 
-                className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover shadow-lg group-hover:scale-105 transition-transform"
+            <Link to="/" className="group flex-shrink-0 ml-0">
+              <img src="https://i.ibb.co/pjQDkHtt/sbit-logo.png" 
+              alt="SBIT Logo" 
+              className="w-16 h-16 object-contain bg-white/5 rounded-lg " 
               />
             </Link>
             
@@ -57,19 +56,19 @@ const Header = () => {
             </div>
 
             {/* Spark Innovation Centre Logo */}
-            <Link to="/" className="group flex-shrink-0 ml-2">
+            <Link to="/" className="group flex-shrink-0 ">
               <img 
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=100&q=80" 
+                src="https://i.ibb.co/S7vGc0qy/spark-logo.png" 
                 alt="Spark Innovation Centre" 
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg object-cover shadow-lg group-hover:scale-105 transition-transform"
+                className="w-18 h-18 sm:w-16 sm:h-16 rounded-lg object-cover shadow-lg group-hover:scale-105 transition-transform"
               />
             </Link>
           </div>
 
           {/* Center: Fest Name */}
-          <div className="hidden md:flex items-center justify-center flex-1">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block w-max">
             <Link to="/">
-              <h2 className="font-heading font-bold text-2xl gradient-text tracking-wide">
+              <h2 className="font-heading font-bold text-2xl gradient-text tracking-wide whitespace-nowrap">
                 {collegeInfo.festName} {collegeInfo.year}
               </h2>
             </Link>
@@ -115,14 +114,14 @@ const Header = () => {
             {/* Mobile Logos */}
             <div className="flex items-center justify-center gap-4 py-3 border-b border-slate-200 mb-3">
               <img 
-                src="https://images.unsplash.com/photo-1562774053-701939374585?w=100&q=80" 
+                src="https://i.ibb.co/pjQDkHtt/sbit-logo.png" 
                 alt="SBIT Logo" 
-                className="w-12 h-12 rounded-lg object-cover shadow"
+                className="w-15 h-15 rounded-lg object-cover shadow"
               />
               <img 
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=100&q=80" 
+                src="https://i.ibb.co/S7vGc0qy/spark-logo.png" 
                 alt="Spark Innovation Centre" 
-                className="w-12 h-12 rounded-lg object-cover shadow"
+                className="w-16 h-16 rounded-lg object-cover shadow"
               />
             </div>
 

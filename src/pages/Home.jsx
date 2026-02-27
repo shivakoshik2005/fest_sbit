@@ -74,8 +74,20 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+
             <h1 className="font-heading font-black text-6xl sm:text-7xl lg:text-8xl gradient-text mb-4">
               {aboutContent.hero.title}
+            </h1>
+            <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight leading-tight">
+              {/* SBIT's - Orangish Red Gradient */}
+              <span className="block bg-gradient-to-r from-orange-800 via-blue-400 to-yellow-400 bg-clip-text text-transparent mb-2">
+                {aboutContent.hero.titlePart1}
+              </span>
+
+              {/* AAROHAN 2026 - Your existing/standard color */}
+              <span className="block bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                {aboutContent.hero.titlePart2}
+              </span>
             </h1>
             <p className="font-heading font-semibold text-2xl sm:text-3xl text-slate-700 mb-6">
               {aboutContent.hero.subtitle}

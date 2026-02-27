@@ -12,7 +12,8 @@ export const collegeInfo = {
 
 export const aboutContent = {
   hero: {
-    title: "AAROHAN 2026",
+    titlePart1: "SBIT's",
+    titlePart2: "AAROHAN 2026",
     subtitle: "The Ultimate Tech & Cultural Fest",
     description: "Join us for an electrifying celebration of creativity, innovation, and talent at Swarna Bharathi Institute of Science and Technology.",
     ctaText: "Explore Events"
@@ -115,7 +116,7 @@ export const events = [
     banner: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
     description: "Enter the virtual battleground and prove your gaming prowess. Compete in various gaming tournaments.",
     image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&q=80",
-    icon: "https://images.unsplash.com/photo-1612287230217-969e43d4af0a?w=200&q=80",
+    icon: "https://i.ibb.co/BH4xjpTq/aa1f4bf6d29b91b26703b3e9a98ad15a.jpg",
     contests: [
       {
         id: 1,
@@ -287,13 +288,13 @@ export const galleryImages = [
 ];
 
 export const contactInfo = {
-  email: "aarohan@sbit.ac.in",
-  phone: "+91 98765 43210",
+  email: "sbitengg@gmail.com",
+  phone: "+91 8712112331",
   address: "Swarna Bharathi Institute of Science and Technology, Khammam, Telangana",
   social: {
-    instagram: "https://instagram.com/aarohan2026",
-    facebook: "https://facebook.com/aarohan2026",
-    youtube: "https://youtube.com/aarohan2026"
+    instagram: "https://www.instagram.com/sbit_innovation_centre?igsh=MXE1OXRmODNkaG1oNg==",
+    facebook: "https://www.facebook.com/profile.php?id=61580287258635",
+    youtube: "https://www.youtube.com/@SBITINNOVATIONCENTRE"
   }
 };
 
