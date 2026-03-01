@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Calendar, Users, Trophy } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContestCard from '../components/ContestCard';
 import GlassCard from '../components/GlassCard';
@@ -73,8 +72,6 @@ const EventDetails = ({ event: propEvent }) => {
 
   return (
     <div className="min-h-screen bg-pattern">
-      <Header />
-
       {/* Hero Banner */}
       <section className="relative h-80 md:h-96 overflow-hidden">
         <MouseFollower speed={1.5} className="absolute inset-0">
@@ -86,10 +83,10 @@ const EventDetails = ({ event: propEvent }) => {
         </MouseFollower>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent" />
         
-        {/* Back Button */}
+        {/* Back Button - Positioned at top */}
         <Link
           to="/events"
-          className="absolute top-24 left-4 md:left-8 flex items-center gap-2 px-4 py-2 rounded-xl glass text-white hover:bg-white/20 transition-colors"
+          className="absolute top-4 left-4 md:top-8 md:left-8 z-10 flex items-center gap-2 px-4 py-2 rounded-xl glass text-white hover:bg-white/20 transition-colors"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Events

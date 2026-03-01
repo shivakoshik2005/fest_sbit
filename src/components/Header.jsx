@@ -36,12 +36,12 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Left: Logos and College Name */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             {/* SBIT Logo */}
             <Link to="/" className="group flex-shrink-0 ml-0">
               <img src="https://i.ibb.co/pjQDkHtt/sbit-logo.png" 
               alt="SBIT Logo" 
-              className="w-16 h-16 object-contain bg-white/5 rounded-lg " 
+              className="w-16 h-16 sm:w-16 sm:h-16 object-contain bg-white/5 rounded-lg" 
               />
             </Link>
             
@@ -51,7 +51,7 @@ const Header = () => {
                 Swarna Bharathi
               </h1>
               <p className="text-xs sm:text-sm text-slate-500">
-                Institute of Science and Technology
+                Institute of Science and Technology<br />(An Autonomous Institution)
               </p>
             </div>
 
@@ -60,7 +60,7 @@ const Header = () => {
               <img 
                 src="https://i.ibb.co/S7vGc0qy/spark-logo.png" 
                 alt="Spark Innovation Centre" 
-                className="w-18 h-18 sm:w-16 sm:h-16 rounded-lg object-cover shadow-lg group-hover:scale-105 transition-transform"
+                className="w-16 h-16 sm:w-16 sm:h-16 rounded-lg object-contain bg-white/5 shadow-lg group-hover:scale-105 transition-transform"
               />
             </Link>
           </div>
@@ -112,16 +112,16 @@ const Header = () => {
             className="md:hidden mt-4 glass rounded-2xl p-4"
           >
             {/* Mobile Logos */}
-            <div className="flex items-center justify-center gap-4 py-3 border-b border-slate-200 mb-3">
+            <div className="flex items-center justify-center gap-3 sm:gap-4 py-3 border-b border-slate-200 mb-3">
               <img 
                 src="https://i.ibb.co/pjQDkHtt/sbit-logo.png" 
                 alt="SBIT Logo" 
-                className="w-15 h-15 rounded-lg object-cover shadow"
+                className="w-16 h-16 sm:w-16 sm:h-16 object-contain bg-white/5 rounded-lg"
               />
               <img 
                 src="https://i.ibb.co/S7vGc0qy/spark-logo.png" 
                 alt="Spark Innovation Centre" 
-                className="w-16 h-16 rounded-lg object-cover shadow"
+                className="w-16 h-16 sm:w-16 sm:h-16 object-contain bg-white/5 rounded-lg"
               />
             </div>
 
