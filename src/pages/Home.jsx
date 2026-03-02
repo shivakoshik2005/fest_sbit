@@ -203,65 +203,94 @@ const Home = () => {
 
       {/* About Fest Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-transparent via-primary/5 to-transparent">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="font-heading font-bold text-4xl text-slate-800 mb-4">
-              {aboutContent.aboutFest.title}
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
-          </motion.div>
+            <div className="max-w-7xl mx-auto">
+              {/* Section Header */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className="text-center mb-16"
+              >
+                <h2 className="font-heading font-bold text-4xl text-slate-800 mb-4">
+                  {aboutContent.aboutFest.title}
+                </h2>
+                <div className="w-24 h-1 bg-gradient-to-r from-orange-600 to-red-600 mx-auto rounded-full" />
+              </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <GlassCard className="h-full">
-                <img
-                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80"
-                  alt="AAROHAN Fest"
-                  className="rounded-xl w-full h-48 object-cover mb-6"
-                />
-                <p className="text-slate-600 leading-relaxed">
-                  {aboutContent.aboutFest.description}
-                </p>
-              </GlassCard>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <GlassCard className="h-full gradient-border">
-                <div className="py-8 text-center">
-                  <h3 className="font-heading font-bold text-3xl gradient-text mb-4">
-                    {collegeInfo.festName} {collegeInfo.year}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed px-6">
-                    {aboutContent.aboutFest.description2}
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                {/* Part 1: The Squircle Poster with Opening Soon Overlay */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="flex flex-col items-center"
+                >
+                  <div className="glass p-4 rounded-[70px] bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl">
+                    <div className="relative group w-full aspect-[3/4] max-w-[380px] overflow-hidden rounded-[60px]">
+                      {/* Main Image */}
+                      <img
+                        src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80"
+                        alt="AAROHAN Fest Poster"
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      
+                      {/* Translucent Overlay Layer */}
+                      <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="absolute inset-0 bg-black/40 backdrop-blur-[3px] flex items-center justify-center"
+                      >
+                        <motion.div
+                          animate={{ scale: [1, 1.05, 1] }}
+                          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                          className="bg-white/10 border border-white/30 backdrop-blur-xl px-10 py-5 rounded-3xl shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+                        >
+                          <span className="text-white font-black text-2xl tracking-[0.2em] uppercase italic drop-shadow-lg">
+                            Opening Soon
+                          </span>
+                        </motion.div>
+                      </motion.div>
+                    </div>
+                  </div>
+                  
+                  <p className="mt-8 text-slate-600 leading-relaxed text-center max-w-md italic">
+                    {aboutContent.aboutFest.description}
                   </p>
-                  <Link
-                    to="/events"
-                    className="inline-flex items-center gap-2 mt-6 px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-medium hover:shadow-lg hover:scale-105 transition-all"
-                  >
-                    Explore Events
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              </GlassCard>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+                </motion.div>
+
+                {/* Part 2: Content and Call to Action */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                >
+                  <div className="glass p-8 md:p-12 rounded-3xl border border-white/20 bg-white/5 backdrop-blur-lg relative overflow-hidden">
+                    {/* Decorative background element */}
+                    <div className="absolute -top-24 -right-24 w-48 h-48 bg-primary/10 rounded-full blur-3xl" />
+                    
+                    <div className="relative z-10 text-center md:text-left">
+                      <h3 className="font-heading font-black text-4xl sm:text-5xl bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent mb-6">
+                        {collegeInfo.festName} {collegeInfo.year}
+                      </h3>
+                      <p className="text-slate-700 text-lg leading-loose mb-8">
+                        {aboutContent.aboutFest.description2}
+                      </p>
+                      
+                      <Link
+                        to="/events"
+                        className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-orange-600 to-red-600 text-white font-bold hover:shadow-[0_10px_20px_rgba(234,88,12,0.3)] hover:scale-105 active:scale-95 transition-all duration-300"
+                      >
+                        Explore Events
+                        <ArrowRight className="w-5 h-5" />
+                      </Link>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </section>
 
       <Footer />
     </div>

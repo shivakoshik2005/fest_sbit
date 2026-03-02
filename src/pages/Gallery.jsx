@@ -180,15 +180,16 @@ const Gallery = () => {
           >
             <h3 className="font-heading font-bold text-xl text-slate-800 text-center mb-6">
               Previous Edition Highlights
+              Coming Soon....
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {[
-                "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80",
-                "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80",
-                "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&q=80",
-                "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&q=80",
-                "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80",
-                "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&q=80"
+                // "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&q=80",
+                // "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80",
+                // "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&q=80",
+                // "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&q=80",
+                // "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&q=80",
+                // "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&q=80"
               ].map((url, index) => (
                 <motion.div
                   key={index}
