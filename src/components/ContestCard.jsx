@@ -78,16 +78,18 @@ const ContestCard = ({ contest, index, onRegister, isExpanded, onToggle }) => {
         </AnimatePresence>
         
         {/* Register Button */}
-        <a
-          href={contest.registerLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={(e) => onRegister && e.stopPropagation()}
-          className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-primary to-secondary text-white text-sm font-medium hover:shadow-lg hover:scale-[1.02] transition-all"
-        >
-          <ExternalLink className="w-4 h-4" />
-          Register Now
-        </a>
+        {contest.registerLink && contest.registerLink !== "Closed" && contest.registerLink !== "Opening Soon" && (
+          <a
+            href={contest.registerLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => onRegister && e.stopPropagation()}
+            className="flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-primary to-secondary text-white text-sm font-medium hover:shadow-lg hover:scale-[1.02] transition-all"
+          >
+            <ExternalLink className="w-4 h-4" />
+            Register Now
+          </a>
+        )}
       </div>
     </motion.div>
   );

@@ -20,6 +20,21 @@ const EventCard = ({ event, index, onClick }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
         
+        {/* Coming Soon Overlay */}
+        {event.comingSoon && (
+          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center">
+            <motion.div
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              className="bg-white/20 border-2 border-white/40 backdrop-blur-md px-6 py-3 rounded-xl"
+            >
+              <span className="text-white font-bold text-lg tracking-wider uppercase drop-shadow-lg">
+                Coming Soon
+              </span>
+            </motion.div>
+          </div>
+        )}
+        
         {/* Event Icon */}
         <div className="absolute bottom-4 left-4 w-16 h-16 rounded-xl overflow-hidden border-2 border-white/30 shadow-lg">
           <img

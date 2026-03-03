@@ -137,6 +137,7 @@ export const events = [
   {
     id: 3,
     name: "Entertainment Extravaganza",
+    comingSoon: true,
     banner: "https://i.ibb.co/F4rd5CPg/image.pngw=800&q=80",
     description: " A spectacular evening of music, dance, and drama. Experience the vibrant culture and artistic talent of participants. Coming Soon....",
     image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&q=80",
@@ -163,6 +164,7 @@ export const events = [
   {
     id: 4,
     name: "Men's Sports Gala",
+    comingSoon: true,
     banner: "https://i.ibb.co/XxRtf7bt/image.pngw=800&q=80",
     description: "Get ready for some action-packed sports events. Compete in traditional sports and fun activities that test your physical prowess and team spirit. Coming Soon....",
     image: "https://i.ibb.co/XxRtf7bt/image.pngw=600&q=80",
@@ -205,6 +207,7 @@ export const events = [
   {
     id: 5,
     name: "Womens' Sports Gala",
+    comingSoon: true,
     banner: "https://i.ibb.co/YB7hxpwy/image.pngw=800&q=80",
     description: "Get ready for some action-packed sports events. Compete in traditional sports and fun activities.<br/> Coming Soon....",
     image: "https://i.ibb.co/YB7hxpwy/image.pngw=600&q=80",
