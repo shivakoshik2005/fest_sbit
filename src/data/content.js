@@ -137,9 +137,9 @@ export const events = [
   {
     id: 3,
     name: "Entertainment Extravaganza",
-    comingSoon: true,
+    comingSoon: false,
     banner: "https://i.ibb.co/F4rd5CPg/image.pngw=800&q=80",
-    description: " A spectacular evening of music, dance, and drama. Experience the vibrant culture and artistic talent of participants. Coming Soon....",
+    description: " A spectacular evening of music, dance, and drama. Experience the vibrant culture and artistic talent of participants.",
     image: "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&q=80",
     icon: "https://i.ibb.co/PG7mgjDr/image.pngw=200&q=80",
     contests: [
@@ -149,7 +149,7 @@ export const events = [
         poster: "https://i.ibb.co/NgC67JcM/image.pngw=400&q=80",
         description: "Show off your dance moves in this high-energy dance battle. Compete against other teams and impress the judges.<br/> Coming Soon....",
         rules: "1. Team of 4-8 members\n2. Duration: 5-10 minutes\n3. Any dance style\n4. Use of props allowed\n5. Decision of judges is final",
-        registerLink: "Opening Soon"
+        registerLink: "https://forms.gle/UyLHsU8sJoTBSoYt9"
       },
       {
         id: 2,
@@ -157,16 +157,16 @@ export const events = [
         poster: "https://i.ibb.co/rGSwvLLJ/image.pngw=400&q=80",
         description: "Perform a skit or play that captivates the audience. Showcase your acting skills and creativity.<br/> Coming Soon....",
         rules: "1. Team of 5-10 members\n2. Duration: 10-15 minutes\n3. Theme will be announced at start\n4. Use of props allowed\n5. Decision of judges is final",
-        registerLink: "Opening Soon"
+        registerLink: "https://forms.gle/RangasthalamRegistration"
       }
     ]
   },
   {
     id: 4,
     name: "Men's Sports Gala",
-    comingSoon: true,
+    comingSoon: false,
     banner: "https://i.ibb.co/XxRtf7bt/image.pngw=800&q=80",
-    description: "Get ready for some action-packed sports events. Compete in traditional sports and fun activities that test your physical prowess and team spirit. Coming Soon....",
+    description: "Get ready for some action-packed sports events. Compete in traditional sports and fun activities that test your physical prowess and team spirit.",
     image: "https://i.ibb.co/XxRtf7bt/image.pngw=600&q=80",
     icon: "https://i.ibb.co/x8LfgXV0/b6fa40ce98bfbe62bc3c61d57ac5e070.jpgw=200&q=80",
     contests: [
@@ -184,7 +184,7 @@ export const events = [
         poster: "https://i.ibb.co/vCQktVg2/image.pngw=400&q=80",
         description: "Unleash your agility and skill in this fast-paced badminton tournament. Compete in singles or doubles and aim for victory.<br/> Coming Soon....",
         rules: "1. Singles and doubles\n2. Best of 3 games\n3. 21 points each game\n4. Knockout format\n5. Bring own racket",
-        registerLink: "Opening Soon"
+        registerLink: "https://forms.gle/HVijauLRicsVnXjF9"
       },
       {
         id: 3,
@@ -192,11 +192,12 @@ export const events = [
         poster: "https://i.ibb.co/23hR21KH/image.pngw=400&q=80",
         description: "Team up and spike your way to victory in this thrilling volleyball tournament. Show your teamwork and competitive spirit.<br/> Coming Soon....",
         rules: "1. Team of 6-12 members\n2. Best of 3 sets\n3. 25 points per set\n4. Knockout format\n5. Volleyballs provided",
-        registerLink: "Opening Soon"  
+        registerLink: "Closed"  
       },
       {
         id: 4,
         name: "Chess",
+        comingSoon: true,
         poster: "https://i.ibb.co/KjsDgdfz/image.pngw=400&q=80",
         description: "Test your strategic thinking in this classic game of chess. Compete in a knockout tournament and showcase your tactical skills. <br/> Coming Soon....",
         rules: "1. Individual participation\n2. Standard chess rules\n3. 30 minutes per player\n4. Knockout format\n5. Chess sets provided",

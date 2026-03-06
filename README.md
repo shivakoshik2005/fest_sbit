@@ -661,9 +661,6 @@ className="block"
 - Safari (latest)
 - Edge (latest)
 
-## License
-
-This project is for educational purposes.
 
 ---
 

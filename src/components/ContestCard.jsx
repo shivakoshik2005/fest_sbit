@@ -18,6 +18,21 @@ const ContestCard = ({ contest, index, onRegister, isExpanded, onToggle }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent" />
         
+        {/* Coming Soon Overlay for Contest */}
+        {contest.comingSoon && (
+          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center">
+            <motion.div
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              className="bg-white/20 border-2 border-white/40 backdrop-blur-md px-3 py-1.5 rounded-lg"
+            >
+              <span className="text-white font-bold text-xs tracking-wider uppercase drop-shadow-lg">
+                Coming Soon
+              </span>
+            </motion.div>
+          </div>
+        )}
+        
         {/* Trophy Icon */}
         <div className="absolute top-3 right-3 p-2 rounded-lg bg-white/20 backdrop-blur-sm">
           <Trophy className="w-4 h-4 text-yellow-400" />
