@@ -122,7 +122,7 @@ export const events = [
         poster: "https://i.ibb.co/QvbCng6L/image.pngw=400&q=80",
         description: "Registrations Closed 🚫",
         rules: "1. Team of 4-6 members\n2. Clues will be provided at start\n3. Time limit: 2 hours\n4. Use of mobile not allowed for clues\n5. First team to find treasure wins",
-        registerLink: "Registration Closed"
+        registerLink: "Closed"
       },
       {
         id: 5,

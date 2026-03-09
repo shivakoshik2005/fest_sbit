@@ -188,7 +188,7 @@ const Home = () => {
             >
               <div className="relative z-10 glass rounded-2xl p-2">
                 <img
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80"
+                  src="https://i.ibb.co/gL0tkCtp/image.pngw=600&q=80"
                   alt="SBIT Campus"
                   className="rounded-xl w-full h-80 object-cover"
                 />
