@@ -128,9 +128,9 @@ export const events = [
         id: 5,
         name: "Riddle Rumble",
         poster: "https://i.ibb.co/Zp2f0Gd4/image.pngw=400&q=80",
-        description: "Test your wits in this riddle-solving competition. Solve a series of challenging riddles to emerge victorious.",
+        description: "Registrations Closed 🚫",
         rules: "Team participation (3–4 members)\n2. Two rounds with five progressive difficulty levels\n3. Buzzer-based system for puzzles, trivia, and reasoning\n4. First-to-press advantage with points passed on incorrect answers\n5. Elimination after Round 1 to determine top contenders\n6. Round 2 features increased difficulty and limited time\n7. Final level determines the winner and runner-up teams",
-        registerLink: "https://forms.gle/Etd8BZSmJmMJvM6z6"
+        registerLink: "Closed"
       }
     ]
   },
@@ -153,14 +153,6 @@ export const events = [
       },
       {
         id: 2,
-        name: "Rangasthalam",
-        poster: "https://i.ibb.co/rGSwvLLJ/image.pngw=400&q=80",
-        description: "Perform a skit or play that captivates the audience. Showcase your acting skills and creativity.",
-        rules: "1. Team of 5-10 members\n2. Duration: 10-15 minutes\n3. Theme will be announced at start\n4. Use of props allowed\n5. Decision of judges is final",
-        registerLink: "https://forms.gle/RangasthalamRegistration"
-      },
-      {
-        id: 3,
         name: "Swarotsav",
         poster: "https://i.ibb.co/Ld3bt5Mr/image.pngw=400&q=80",
         description: "Unleash your vocal talent in this singing competition. Sing your heart out and win the hearts of the judges.",
@@ -192,13 +184,13 @@ export const events = [
         poster: "https://i.ibb.co/vCQktVg2/image.pngw=400&q=80",
         description: "Unleash your agility and skill in this fast-paced badminton tournament. Compete in singles or doubles and aim for victory.<br/> Coming Soon....",
         rules: "1. Singles and doubles\n2. Best of 3 games\n3. 21 points each game\n4. Knockout format\n5. Bring own racket",
-        registerLink: "https://forms.gle/HVijauLRicsVnXjF9"
+        registerLink: "Closed"
       },
       {
         id: 3,
         name: "Volleyball",
         poster: "https://i.ibb.co/23hR21KH/image.pngw=400&q=80",
-        description: "Team up and spike your way to victory in this thrilling volleyball tournament. Show your teamwork and competitive spirit.<br/> Coming Soon....",
+        description: "Registrations Closed 🚫",
         rules: "1. Team of 6-12 members\n2. Best of 3 sets\n3. 25 points per set\n4. Knockout format\n5. Volleyballs provided",
         registerLink: "Closed"  
       },
@@ -236,7 +228,7 @@ export const events = [
         poster: "https://i.ibb.co/YT8myv2V/image.pngw=400&q=80",
         description: "Unleash your agility and skill in this fast-paced badminton tournament. Compete in singles or doubles and aim for victory.<br/> Coming Soon....",
         rules: "1. Singles and doubles\n2. Best of 3 games\n3. 21 points each game\n4. Knockout format\n5. Bring own racket",
-        registerLink: "https://forms.gle/F9BmbTAL43ufUckQ8"
+        registerLink: "Closed"
       },
       {
         id: 2,
@@ -306,7 +298,7 @@ export const events = [
 // ];
 
 export const contactInfo = {
-  email: "sbitengg@gmail.com",
+  email: "csefest.sbit@gmail.com",
   phone: "+91 8712112331",
   address: "Swarna Bharathi Institute of Science and Technology, Khammam, Telangana",
   social: {

@@ -104,7 +104,7 @@ const ContestCard = ({ contest, index, onRegister, isExpanded, onToggle }) => {
         </AnimatePresence>
         
         {/* Register Button */}
-        {contest.registerLink && contest.registerLink !== "Closed" && contest.registerLink !== "Opening Soon" && (
+        {contest.registerLink && contest.registerLink !== "Closed" && contest.registerLink !== "Opening Soon" && !contest.comingSoon && (
           <a
             href={contest.registerLink}
             target="_blank"

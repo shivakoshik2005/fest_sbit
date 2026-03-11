@@ -96,6 +96,55 @@ All website content is stored in `src/data/content.js`. You can modify:
 - **Gallery Images:** Edit `galleryImages` array
 - **Contact Info:** Edit `contactInfo` object
 
+### How to Close/Open Event Registrations
+
+To manage event registrations, edit the `contest` object in `src/data/content.js`:
+
+#### Closing Registrations for an Event:
+To close registrations, set the following properties:
+
+```javascript
+{
+  id: 5,
+  name: "Riddle Rumble",
+  // ... other properties
+  description: "Registrations Closed 🚫",
+  registerLink: "Closed"
+}
+```
+
+#### Temporarily Hide an Event (Coming Soon):
+To temporarily hide an event and show "Coming Soon", add the `comingSoon` property:
+
+```javascript
+{
+  id: 2,
+  name: "Rangasthalam",
+  comingSoon: true,
+  // ... other properties
+  registerLink: "https://forms.gle/your-registration-link"
+}
+```
+
+When `comingSoon: true` is set:
+- A "Coming Soon" overlay appears on the contest card
+- The registration button is hidden
+
+#### Opening Registrations for an Event:
+To reopen registrations:
+
+```javascript
+{
+  id: 5,
+  name: "Riddle Rumble",
+  // ... other properties
+  description: "Test your wits in this riddle-solving competition...",
+  registerLink: "https://forms.gle/your-registration-link"
+}
+```
+
+Simply remove the `comingSoon` property (if present) and restore the original `description` and `registerLink`.
+
 ### Adding/Modifying Events
 
 In `src/data/content.js`, each event has:
